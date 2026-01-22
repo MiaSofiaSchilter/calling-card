@@ -1,0 +1,323 @@
+@font-face {
+    font-family: "Avara-Bold";
+    src: url("fonts/Avara-Bold.woff2") format("woff2");
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grid-container {
+    display: grid;
+    padding: 15px 15px 15px 15px;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "image-4 image-4  image-4"
+    "name name text-2"
+    "name name text-3"
+    "image-3 image-3 text-1"
+    "image-1 image-2 image-5"
+    "bio bio ."
+    "text-4 text-4 text-5"
+    "text-4 text-4 text-6"
+    "image-6 image-6 ."
+    ". . text-7"
+   "image-7 image-9 image-8"
+   "text-8 text-8 text-10"
+   "text-8 text-8 text-11"
+   "image-10 image-10 ."
+   ". . text-9"
+   "image-12 image-13 image-11"
+
+    
+    
+    
+}   
+.grid-container:has(.image-2:hover) .bio {
+    opacity: 1;
+}
+
+body {
+background-color: rgb(255, 255, 255);
+font-family: "helvetica", serif;
+font-size: 15px;
+}
+
+.name {
+    grid-area: name;
+    text-align: left;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name h1 {
+color:rgb(0, 0, 0);
+font-size: 1rem;
+font-size: 185px;
+margin-top: -150px;
+}
+
+
+
+.bio {
+    grid-area: bio;
+    font-size: 10px;
+    margin-bottom: 200px;
+    margin-left: 480px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-top: -30px;
+    z-index: 1;
+    font-weight: bold;
+}
+
+.bio p {
+    color:rgb(0, 0, 0);
+    text-align:left
+}
+
+
+
+.image-1 {
+    grid-area: image-1;
+    position: relative;
+}
+
+.image-1 img{
+    transition: opacity 0.3s ease;
+}
+
+.image-1 .b {
+ position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+   
+.image-1:hover .a {
+ opacity: 0;
+}
+
+.image-1:hover .b {
+ opacity: 1;
+}
+
+.image-2 {
+    grid-area: image-2;
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: -50px;
+}
+
+.image-2 {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.image-2:hover {
+    opacity: 0.5;
+}
+.image-2:hover ~ .bio {
+    opacity: 1;
+}
+.image-4 p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    
+}.image-6 {
+    grid-column: 1 / span 2;   /* über zwei Spalten */
+    margin-top: 30px;
+}
+
+.image-3 {
+    grid-area: image-3;
+    margin-bottom: 100px;
+}
+
+.image-3:hover ~ .text-1 {
+    opacity: 1;
+}
+
+.image-4 {
+    grid-area: image-4;
+    width: 100%;
+    text-align:center;
+    margin-bottom: 600px;
+    place-items: center;
+    margin-top: 250px;
+
+}
+
+.image-5 {
+    grid-area: image-4;
+
+}
+
+.image-4 {
+      opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.image-4:hover {
+opacity: 0.5;
+}
+
+.image-5 {
+    grid-area: image-5;
+}
+
+.text-1 { 
+    grid-area: text-1; 
+    text-align: left; 
+    margin-right: 200px; 
+    margin-left: 70px; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    font-size: 12px; }
+
+.text-1 p {
+    margin: 0;
+}
+
+.text-2,
+.text-3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 75px;
+}
+.text-3 {
+    grid-area: text-3;
+    margin-bottom: 200px;
+}
+.bio {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.text-4 {
+  grid-area: text-4;
+  font-size: 185px;
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.image-6 {
+    grid-area: image-6;
+    margin-top: 600px;
+    margin-bottom: 100px;
+}
+
+.image-6:hover ~ .text-7 {
+    opacity: 1;
+}
+
+.text-5, .text-6 { 
+    margin: 0; 
+    font-size: 14px; 
+    font-weight: bold; 
+}
+
+.text-5 {
+    grid-area: text-5;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.image-6 {
+    grid-area: image-6;
+    margin-top: 30px; 
+}
+
+.text-7 {
+    grid-area: text-7; 
+    text-align: left; 
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 70px;
+    margin-right: 200px;
+    margin-top: -885px; 
+}
+
+.image-6:hover ~ .text-7 {
+    opacity: 1; 
+}
+
+
+.image-7{
+    grid-area: image-7;
+
+}
+.image-8{
+    grid-area: image-8;
+}
+.image-9{
+    grid-area: image-9;
+    margin-top: 150px;
+}
+.text-8 {
+    grid-area: text-8;
+    font-size: 185px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 40px;
+    z-index: 10;     
+}
+
+.image-11{
+    grid-area: image-11;
+    margin-top: 100px;
+}
+.image-12{
+    grid-area: image-12;
+    margin-top: 100px;
+}
+
+.image-13{
+    grid-area: image-13;
+    margin-top: 300px;
+}
+.image-10{
+    grid-area: image-10;
+    margin-top: -100px;
+}
+.text-9 {
+    grid-area: text-9;
+    margin: 0;
+    font-size: 14px;
+    margin-top: -775px;
+    margin-left: 70px;
+    margin-right: 200px;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+
+.image-10:hover ~ .text-9 {
+    opacity: 1;
+}
+
+.text-10 {
+    grid-area: text-10;
+    margin: 0;         
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.text-11 {
+    grid-area: text-11;
+    margin: 0;          
+    font-size: 14px;
+    font-weight: bold;
+}

@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "Avara-Bold";
+    src: url("fonts/Avara-Bold.woff2") format("woff2");
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-container {
+    display: grid;
+    padding: 15px 15px 15px 15px;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "image-4 name ."
+    ". text-3 ."
+     ". text-1 text-1"
+     ". . bio"
+    "image-2 image-3 image-1"
+    ". . text-2";
+    
+}   
+
+body {
+background-color: rgb(255, 255, 255);
+font-family: "helvetica", serif;
+font-size: 15px;
+}
+
+.name {
+    grid-area: name;
+    text-align: center;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: thin;
+    font-size: 8px;
+}
+
+.name h1 {
+color:rgb(0, 0, 0);
+margin: 0;
+}
+
+
+.bio {
+    grid-area: bio;
+    font-size: 10px;
+    margin-bottom: 100px;
+}
+
+.bio p {
+    color:rgb(0, 0, 0);
+    margin: 0;
+    text-align:right
+}
+
+
+
+.image-1 {
+    grid-area: image-1;
+}
+
+.image-2 {
+    grid-area: image-2;
+}
+
+.image-3 {
+    grid-area: image-3;
+}
+
+.image-4 {
+    grid-area: image-4;
+    width: 15%;      
+    align-self: center;
+    margin: 0%;
+}
+
+
+.text-1 {
+    grid-area: text-1;
+    text-align: left;
+    margin-bottom: 200px;
+    font-size: 30px;
+    text-align:left
+}
+
+.text-2 {
+    grid-area: text-2;
+    font-family: "Aka-AcidGR-RealAdult";
+
+    font-size: 8rem;
+}
+
+.text-3 {
+    grid-area: text-3;
+    text-align: right;
+    font-family: "Aka-AcidGR-RealAdult";
+}
+
+

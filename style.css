@@ -17,6 +17,16 @@ img {
     display: block;
 }
 
+
+a {
+  color: rgb(0, 0, 0);           /* Farbe des Links */
+  text-decoration: none; /* Unterstreichung entfernen */
+  font-weight: bold;     /* Fettschrift */
+  margin-top: -300px;
+
+}
+
+
 .grid-container {
     display: grid;
     padding: 15px 15px 15px 15px;
@@ -41,12 +51,9 @@ img {
    "image-12 image-13 image-11"
    ". text-15 ."
 
-  
-
-    
-    
     
 }   
+
 .grid-container:has(.image-2:hover) .bio {
     opacity: 1;
 }
